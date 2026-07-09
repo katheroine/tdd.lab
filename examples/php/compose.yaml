@@ -1,0 +1,9 @@
+name: tdd-example
+
+services:
+
+  application:
+    container_name: tdd-example-app
+    build: .
+    volumes:
+      - ./:/code
