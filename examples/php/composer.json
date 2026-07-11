@@ -2,5 +2,19 @@
     "require-dev": {
         "squizlabs/php_codesniffer": "^4.0",
         "phpunit/phpunit": "^13.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "TddLab\\": [
+                "src/"
+            ]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TddLab\\": [
+                "tests/"
+            ]
+        }
     }
 }
