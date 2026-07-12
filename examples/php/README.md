@@ -1,3 +1,17 @@
+# The basics
+# Example: Money
+
+## The list
+
+The vast majority of articles, tutorials, and courses on TDD describe its cycle in three standard steps:
+
+1. Write a test and see it fail (Red).
+2. Write the minimal amount of production code to make the test pass (Green).
+3. Refactor the newly written code.
+
+Kent Beck, who rediscovered TDD, calls this *the TDD mantra* in his book *Test-Driven Development: By Example*. However, he also emphasizes another crucial element of the process: *the test list*. This list is a dynamic, ever-evolving set of features the code unit should provide, problems to solve, or quality concerns the programmer needs to address. It helps maintain peace of mind, ensuring focus on the current step of the TDD cycle while keeping changes atomic.
+
+Initially, the test list might consist of just the very first feature or behavior of the code unit. It is then continuously expanded as the programmer identifies new requirements. There is no need to map out everything from the start. Any ideas regarding what the code should handle, as well as thoughts on the architecture itself - such as its readability, robustness, and modularity - can simply be added to the list. By handling them at the right time, we prevent ourselves from overcomplicating the current TDD cycle and avoid the trap of trying to fix everything all at once.
 
 [MoneyTest.php](./tests/Basics/MoneyTest.php)
 
