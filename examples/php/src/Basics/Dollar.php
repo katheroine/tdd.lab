@@ -5,4 +5,7 @@ namespace TddLab\Basics;
 
 class Dollar
 {
+    public function multiply()
+    {
+    }
 }
