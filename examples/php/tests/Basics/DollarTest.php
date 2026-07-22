@@ -6,13 +6,13 @@ namespace TddLab\Basics;
 use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 
-class MoneyTest extends TestCase
+class DollarTest extends TestCase
 {
     #[Test]
     public function testMultiplication()
     {
-        $three = new Money(3);
-        $three->multiply(2);
-        $this->assertEquals(6, $three->amount);
+        $five = new Dollar(5);
+        $five->multiply(2);
+        $this->assertEquals(10, $five->amount);
     }
 }
