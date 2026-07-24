@@ -5,9 +5,10 @@ namespace TddLab\Basics;
 
 class Dollar
 {
-    public $amount = 5 * 2;
+    public $amount;
 
     public function multiply()
     {
+        $this->amount = 5 * 2;
     }
 }
