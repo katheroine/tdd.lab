@@ -12,8 +12,8 @@ class Dollar
         $this->amount = $amount;
     }
 
-    public function multiply()
+    public function multiply($multiplier)
     {
-        $this->amount = $this->amount * 2;
+        $this->amount = $this->amount * $multiplier;
     }
 }
