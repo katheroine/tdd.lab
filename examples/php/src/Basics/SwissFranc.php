@@ -5,4 +5,7 @@ namespace TddLab\Basics;
 
 class SwissFranc
 {
+    public function multiply()
+    {
+    }
 }
