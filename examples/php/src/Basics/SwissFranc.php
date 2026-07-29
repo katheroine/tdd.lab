@@ -7,6 +7,6 @@ class SwissFranc
 {
     public function multiply()
     {
-        return new \stdClass();
+        return new self();
     }
 }
