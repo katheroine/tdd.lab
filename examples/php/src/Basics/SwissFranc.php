@@ -9,4 +9,8 @@ class SwissFranc
     {
         return new self();
     }
+
+    public function equals()
+    {
+    }
 }
