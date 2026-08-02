@@ -12,5 +12,6 @@ class SwissFranc
 
     public function equals()
     {
+        return true;
     }
 }
