@@ -12,9 +12,9 @@ class DollarTest extends TestCase
     public function testMultiplication()
     {
         $five = new Dollar(5);
-        $this->assertEquals(new Dollar(10), $five->multiply(2));
-        $this->assertEquals(new Dollar(15), $five->multiply(3));
-        $this->assertNotEquals(new Dollar(15), $five->multiply(2));
+        $this->assertTrue((new Dollar(10))->equals($five->multiply(2)));
+        $this->assertTrue((new Dollar(15))->equals($five->multiply(3)));
+        $this->assertFalse((new Dollar(15))->equals($five->multiply(2)));
     }
 
     #[Test]
