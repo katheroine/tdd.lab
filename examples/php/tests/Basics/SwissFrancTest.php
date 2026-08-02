@@ -16,4 +16,11 @@ class SwissFrancTest extends TestCase
     //     $this->assertEquals(new SwissFranc(15), $five->multiply(3));
     //     $this->assertNotEquals(new SwissFranc(15), $five->multiply(2));
     // }
+
+    #[Test]
+    public function testEquality()
+    {
+        $this->assertTrue((new SwissFranc(5))->equals(new SwissFranc(5)));
+        $this->assertFalse((new SwissFranc(5))->equals(new SwissFranc(6)));
+    }
 }
