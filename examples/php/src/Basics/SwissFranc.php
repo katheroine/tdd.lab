@@ -12,9 +12,9 @@ class SwissFranc
         $this->amount = $amount;
     }
 
-    public function multiply()
+    public function multiply($multiplier)
     {
-        return new self();
+        return new self($this->amount * $multiplier);
     }
 
     public function equals($swissFranc)
