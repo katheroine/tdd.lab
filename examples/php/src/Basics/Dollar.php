@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace TddLab\Basics;
 
-class Dollar
+class Dollar extends Money
 {
     private $amount;
 
