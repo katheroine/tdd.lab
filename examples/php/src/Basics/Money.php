@@ -5,4 +5,5 @@ namespace TddLab\Basics;
 
 class Money
 {
+    protected $amount;
 }
