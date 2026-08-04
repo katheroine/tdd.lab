@@ -3,10 +3,8 @@ declare(strict_types=1);
 
 namespace TddLab\Basics;
 
-class SwissFranc
+class SwissFranc extends Money
 {
-    private $amount;
-
     public function __construct($amount)
     {
         $this->amount = $amount;
