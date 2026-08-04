@@ -14,9 +14,4 @@ class SwissFranc extends Money
     {
         return new self($this->amount * $multiplier);
     }
-
-    public function equals($swissFranc)
-    {
-        return $this->amount == $swissFranc->amount;
-    }
 }
