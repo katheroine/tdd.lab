@@ -7,6 +7,11 @@ class Money
 {
     protected $amount;
 
+    public static function dollar($amount)
+    {
+        return new Dollar($amount);
+    }
+
     public function equals(Money $money)
     {
         return (
