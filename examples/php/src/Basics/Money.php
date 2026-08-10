@@ -14,6 +14,11 @@ abstract class Money
         return new Dollar($amount);
     }
 
+    public static function swissFranc($amount)
+    {
+        return new SwissFranc($amount);
+    }
+
     public function equals(Money $money)
     {
         return (
