@@ -12,15 +12,15 @@ class DollarTest extends TestCase
     public function testMultiplication()
     {
         $five = Money::dollar(5);
-        $this->assertTrue((new Dollar(10))->equals($five->multiply(2)));
-        $this->assertTrue((new Dollar(15))->equals($five->multiply(3)));
-        $this->assertFalse((new Dollar(15))->equals($five->multiply(2)));
+        $this->assertTrue(Money::dollar(10)->equals($five->multiply(2)));
+        $this->assertTrue(Money::dollar(15)->equals($five->multiply(3)));
+        $this->assertFalse(Money::dollar(15)->equals($five->multiply(2)));
     }
 
     #[Test]
     public function testEquality()
     {
-        $this->assertTrue((new Dollar(5))->equals(new Dollar(5)));
-        $this->assertFalse((new Dollar(5))->equals(new Dollar(6)));
+        $this->assertTrue(Money::dollar(5)->equals(Money::dollar(5)));
+        $this->assertFalse(Money::dollar(5)->equals(Money::dollar(6)));
     }
 }
