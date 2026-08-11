@@ -7,6 +7,8 @@ abstract class Money
 {
     protected $amount;
 
+    abstract public static function currency();
+
     abstract public function multiply($multiplier);
 
     public static function dollar($amount)
