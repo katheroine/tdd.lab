@@ -11,11 +11,6 @@ class Dollar extends Money
         self::$currency = "USD";
     }
 
-    public static function currency()
-    {
-        return self::$currency;
-    }
-
     public function multiply($multiplier)
     {
         return new self($this->amount * $multiplier);

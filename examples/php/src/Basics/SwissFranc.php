@@ -11,11 +11,6 @@ class SwissFranc extends Money
         self::$currency = "CHF";
     }
 
-    public static function currency()
-    {
-        return self::$currency;
-    }
-
     public function multiply($multiplier)
     {
         return new self($this->amount * $multiplier);

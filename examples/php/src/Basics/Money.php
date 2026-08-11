@@ -8,9 +8,12 @@ abstract class Money
     protected static $currency;
     protected $amount;
 
-    abstract public static function currency();
-
     abstract public function multiply($multiplier);
+
+    public static function currency()
+    {
+        return self::$currency;
+    }
 
     public static function dollar($amount)
     {
