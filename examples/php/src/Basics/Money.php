@@ -5,6 +5,7 @@ namespace TddLab\Basics;
 
 abstract class Money
 {
+    protected static $currency;
     protected $amount;
 
     abstract public static function currency();

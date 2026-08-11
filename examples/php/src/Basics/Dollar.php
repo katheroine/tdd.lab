@@ -5,8 +5,6 @@ namespace TddLab\Basics;
 
 class Dollar extends Money
 {
-    private static $currency;
-
     public function __construct($amount)
     {
         $this->amount = $amount;
