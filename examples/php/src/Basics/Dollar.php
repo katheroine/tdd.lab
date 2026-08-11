@@ -10,6 +10,11 @@ class Dollar extends Money
         $this->amount = $amount;
     }
 
+    public static function currency()
+    {
+        return "USD";
+    }
+
     public function multiply($multiplier)
     {
         return new self($this->amount * $multiplier);
