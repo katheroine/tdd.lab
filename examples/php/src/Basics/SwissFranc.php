@@ -5,7 +5,7 @@ namespace TddLab\Basics;
 
 class SwissFranc extends Money
 {
-    public function __construct($amount)
+    public function __construct($amount, $currency)
     {
         $this->amount = $amount;
         $this->currency = "CHF";
@@ -13,6 +13,6 @@ class SwissFranc extends Money
 
     public function multiply($multiplier)
     {
-        return new self($this->amount * $multiplier);
+        return Money::swissFranc($this->amount * $multiplier);
     }
 }
