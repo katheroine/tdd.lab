@@ -22,7 +22,7 @@ abstract class Money
 
     public static function swissFranc($amount)
     {
-        return new SwissFranc($amount, null);
+        return new SwissFranc($amount, "CHF");
     }
 
     public function equals(Money $money)
