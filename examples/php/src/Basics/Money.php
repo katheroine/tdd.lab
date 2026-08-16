@@ -8,7 +8,7 @@ abstract class Money
     protected $currency;
     protected $amount;
 
-    protected function __construct($amount, $currency)
+    public function __construct($amount, $currency)
     {
         $this->amount = $amount;
         $this->currency = $currency;
