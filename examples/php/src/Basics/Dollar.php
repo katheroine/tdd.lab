@@ -5,14 +5,14 @@ namespace TddLab\Basics;
 
 class Dollar extends Money
 {
-    public function __construct($amount)
+    public function __construct($amount, $currency)
     {
         $this->amount = $amount;
-        $this->currency = "USD";
+        $this->currency = $currency;
     }
 
     public function multiply($multiplier)
     {
-        return new self($this->amount * $multiplier);
+        return Money::dollar($this->amount * $multiplier);
     }
 }
