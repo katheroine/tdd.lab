@@ -10,7 +10,7 @@ abstract class Money
 
     abstract public function multiply($multiplier);
 
-    public static function currency()
+    public function currency()
     {
         return self::$currency;
     }

@@ -18,11 +18,11 @@ class MoneyTest extends TestCase
     #[Test]
     public function testCurrency() {
         $dollar = Money::dollar(1);
-        $this->assertEquals("USD", $dollar::currency());
+        $this->assertEquals("USD", $dollar->currency());
 
         $franc = Money::swissFranc(1);
-        $this->assertEquals("CHF", $franc::currency());
+        $this->assertEquals("CHF", $franc->currency());
 
-        $this->assertEquals("USD", $dollar::currency());
+        $this->assertEquals("USD", $dollar->currency());
     }
 }
