@@ -5,14 +5,14 @@ namespace TddLab\Basics;
 
 abstract class Money
 {
-    protected static $currency;
+    protected $currency;
     protected $amount;
 
     abstract public function multiply($multiplier);
 
     public function currency()
     {
-        return self::$currency;
+        return $this->currency;
     }
 
     public static function dollar($amount)

@@ -8,7 +8,7 @@ class Dollar extends Money
     public function __construct($amount)
     {
         $this->amount = $amount;
-        self::$currency = "USD";
+        $this->currency = "USD";
     }
 
     public function multiply($multiplier)
