@@ -8,6 +8,12 @@ abstract class Money
     protected $currency;
     protected $amount;
 
+    protected function __construct($amount, $currency)
+    {
+        $this->amount = $amount;
+        $this->currency = $currency;
+    }
+
     abstract public function multiply($multiplier);
 
     public function currency()

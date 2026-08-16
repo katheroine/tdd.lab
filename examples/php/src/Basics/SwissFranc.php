@@ -7,8 +7,7 @@ class SwissFranc extends Money
 {
     public function __construct($amount, $currency)
     {
-        $this->amount = $amount;
-        $this->currency = $currency;
+        parent::__construct($amount, $currency);
     }
 
     public function multiply($multiplier)
