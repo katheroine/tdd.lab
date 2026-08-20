@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace TddLab\Basics;
 
-abstract class Money
+class Money
 {
     protected $currency;
     protected $amount;
@@ -14,7 +14,10 @@ abstract class Money
         $this->currency = $currency;
     }
 
-    abstract public function multiply($multiplier);
+    public function multiply($multiplier)
+    {
+        return null;
+    }
 
     public function currency()
     {
