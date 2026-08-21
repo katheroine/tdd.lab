@@ -7,6 +7,6 @@ class SwissFranc extends Money
 {
     public function multiply($multiplier)
     {
-        return new Money($this->amount * $multiplier, $this->currency);
+        return new SwissFranc($this->amount * $multiplier, $this->currency);
     }
 }
