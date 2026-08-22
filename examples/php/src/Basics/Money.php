@@ -16,7 +16,7 @@ class Money
 
     public function multiply($multiplier)
     {
-        return null;
+        return new Money($this->amount * $multiplier, $this->currency);
     }
 
     public function currency()
