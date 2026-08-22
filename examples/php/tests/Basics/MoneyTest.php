@@ -30,4 +30,20 @@ class MoneyTest extends TestCase
     public function testDifferentClassEquality() {
         $this->assertTrue(new Money(10, "CHF")->equals(new SwissFranc(10, "CHF")));
     }
+
+    #[Test]
+    public function testMultiplication()
+    {
+        $five = Money::dollar(5);
+        $this->assertTrue(Money::dollar(10)->equals($five->multiply(2)));
+        $this->assertTrue(Money::dollar(15)->equals($five->multiply(3)));
+        $this->assertFalse(Money::dollar(15)->equals($five->multiply(2)));
+    }
+
+    #[Test]
+    public function testEquality()
+    {
+        $this->assertTrue(Money::dollar(5)->equals(Money::dollar(5)));
+        $this->assertFalse(Money::dollar(5)->equals(Money::dollar(6)));
+    }
 }
