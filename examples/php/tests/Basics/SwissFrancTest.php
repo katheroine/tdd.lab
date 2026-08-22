@@ -16,11 +16,4 @@ class SwissFrancTest extends TestCase
         $this->assertTrue(Money::swissFranc(15)->equals($five->multiply(3)));
         $this->assertFalse(Money::swissFranc(15)->equals($five->multiply(2)));
     }
-
-    #[Test]
-    public function testEquality()
-    {
-        $this->assertTrue(Money::swissFranc(5)->equals(Money::swissFranc(5)));
-        $this->assertFalse(Money::swissFranc(5)->equals(Money::swissFranc(6)));
-    }
 }
