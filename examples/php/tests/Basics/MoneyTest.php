@@ -33,6 +33,11 @@ class MoneyTest extends TestCase
         $this->assertTrue(Money::dollar(10)->equals($five->multiply(2)));
         $this->assertTrue(Money::dollar(15)->equals($five->multiply(3)));
         $this->assertFalse(Money::dollar(15)->equals($five->multiply(2)));
+
+        $five = Money::swissFranc(5);
+        $this->assertTrue(Money::swissFranc(10)->equals($five->multiply(2)));
+        $this->assertTrue(Money::swissFranc(15)->equals($five->multiply(3)));
+        $this->assertFalse(Money::swissFranc(15)->equals($five->multiply(2)));
     }
 
     #[Test]
