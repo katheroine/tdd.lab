@@ -41,4 +41,9 @@ class Money
             && $this->currency() == $money->currency()
         );
     }
+
+    public function add(Money $addend)
+    {
+        return new Money($this->amount + $addend->amount, $this->currency);
+    }
 }
