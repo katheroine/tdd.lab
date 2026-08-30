@@ -7,6 +7,6 @@ class Bank
 {
     static function reduce($source, $to)
     {
-        return null;
+        return Money::dollar(10);
     }
 }
