@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace TddLab\Basics;
 
-class Money
+class Money implements Expression
 {
     protected $currency;
     protected $amount;
@@ -42,8 +42,8 @@ class Money
         );
     }
 
-    public function add(Money $addend)
+    public function add(Money $addend): Expression
     {
-        return new Money($this->amount + $addend->amount, $this->currency);
+        return new Sum($this, $addend); //Money($this->amount + $addend->amount, $this->currency);
     }
 }
