@@ -58,6 +58,7 @@ class MoneyTest extends TestCase
         $this->assertEquals(Money::dollar(10), $reduced);
     }
 
+    #[Test]
     public function testAddReturnsSum()
     {
         $five = Money::dollar(5);
